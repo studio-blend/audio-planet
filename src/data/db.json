@@ -1,0 +1,247 @@
+{
+  "products": [
+    {
+      "id": "prod-1",
+      "name": "Naim Nait XS 3",
+      "category": "Amplifiers",
+      "brand": "Naim Audio",
+      "specs": [
+        "70W per channel into 8 ohms",
+        "Class A headphone amplifier",
+        "Built-in MM phono stage",
+        "Alps Blue Velvet volume control"
+      ],
+      "description": "Offering much of the performance of the reference-quality SUPERNAIT 3 in a simpler, slimmer enclosure, combining a 70W power amplifier with five analog inputs plus a phono stage.",
+      "image": "/images/amplifier.jpg",
+      "featured": true
+    },
+    {
+      "id": "prod-2",
+      "name": "McIntosh MA252",
+      "category": "Amplifiers",
+      "brand": "McIntosh Labs",
+      "specs": [
+        "100W per channel into 8 ohms",
+        "Hybrid design: vacuum tube preamp, solid-state power amp",
+        "High Drive Headphone Amplifier",
+        "Patented Power Guard® technology"
+      ],
+      "description": "The MA252 Integrated Amplifier is the first hybrid integrated amplifier from McIntosh. It combines the finest of vacuum tube and solid state audio design principles to create an amplifier that is both visually and sonically stunning.",
+      "image": "/images/amplifier_hybrid.jpg",
+      "featured": true
+    },
+    {
+      "id": "prod-3",
+      "name": "Acoustic Horizon Reference 5",
+      "category": "Speakers",
+      "brand": "Audio Planet Custom",
+      "specs": [
+        "3-way bass reflex design",
+        "Beryllium dome tweeter",
+        "Custom carbon-fiber midrange and woofers",
+        "Frequency response: 28Hz - 40kHz"
+      ],
+      "description": "Engineered by Audio Planet's in-house consultants, the Reference 5 speakers deliver a breathtaking holographic soundstage with pristine transparency and deep, musical bass that integrates seamlessly with your room's acoustics.",
+      "image": "/images/speaker.jpg",
+      "featured": true
+    },
+    {
+      "id": "prod-4",
+      "name": "Sonus Faber Lumina II",
+      "category": "Speakers",
+      "brand": "Sonus Faber",
+      "specs": [
+        "2-way bookshelf speaker",
+        "29mm high-definition Damped Apex Dome tweeter",
+        "150mm custom-blend paper pulp cone mid-woofer",
+        "Frequency response: 55Hz - 24kHz"
+      ],
+      "description": "Handcrafted in Italy, the Lumina II is a compact bookshelf speaker that delivers incredible scale, resolution, and emotional depth, wrapped in premium leather and real wood veneers.",
+      "image": "/images/bookshelf.jpg",
+      "featured": false
+    },
+    {
+      "id": "prod-5",
+      "name": "Rega Planar 3",
+      "category": "Turntables",
+      "brand": "Rega Research",
+      "specs": [
+        "RB330 precision tonearm",
+        "Elys 2 MM cartridge pre-fitted",
+        "24V low-noise motor",
+        "Opto-white float glass platter"
+      ],
+      "description": "The Rega Planar 3 has been the benchmark for audiophile turntables for decades. With class-leading detail retrieval and exceptional speed stability, it turns vinyl records into pure emotion.",
+      "image": "/images/turntable.jpg",
+      "featured": true
+    },
+    {
+      "id": "prod-6",
+      "name": "Naim ND5 XS 2",
+      "category": "Source Equipment",
+      "brand": "Naim Audio",
+      "specs": [
+        "Hi-res UPnP streaming up to 32bit/384kHz",
+        "Chromecast, AirPlay 2, Spotify Connect, TIDAL, Qobuz built-in",
+        "Roon Ready",
+        "Subtle, heavy aluminum casing"
+      ],
+      "description": "Our entry-level network player is the perfect introduction to music streaming. It offers outstanding audio performance combined with extreme convenience and versatile digital inputs.",
+      "image": "/images/source.jpg",
+      "featured": false
+    }
+  ],
+  "blogs": [
+    {
+      "slug": "best-home-theatre-in-the-world",
+      "title": "Best Home Theatre in the World",
+      "date": "September 25, 2013",
+      "author": "Palani Kumar",
+      "category": "Acoustics",
+      "summary": "Exploring what truly makes a home theatre the 'best' – it's not just the equipment, it's the meticulous acoustic integration.",
+      "content": "When someone asks for the 'best home theatre in the world,' they usually expect a list of the most expensive projectors and speakers. However, the true measure of a world-class home theatre is how it interacts with the room. A million-dollar audio system placed in a poorly treated room will sound vastly inferior to a modest system in an acoustically optimized environment. At Audio Planet, we start with the room's geometry. We manage early reflections, control reverberation times, and ensure smooth bass response across all seating positions. Only then do we select the equipment that matches the acoustic signature of the space. The best home theatre is the one where the technology disappears, leaving only the pure experience of the movie.",
+      "readTime": "4 min read",
+      "image": "/images/hero_listening_room.jpg"
+    },
+    {
+      "slug": "good-vs-best-home-theater",
+      "title": "Good Home Theater vs Best Home Theater",
+      "date": "September 25, 2013",
+      "author": "Palani Kumar",
+      "category": "Hi-Fi Heritage",
+      "summary": "What separates a 'good' home theater from the 'best'? The devil is in the acoustic details.",
+      "content": "A good home theater delivers loud sound and a big picture. The best home theater delivers emotional impact. The difference lies in the calibration and acoustic design. A good setup might have speakers placed wherever they fit; the best setup has speakers precisely positioned based on mathematical models of room modes. A good setup uses basic acoustic panels; the best setup uses custom-designed absorption and diffusion to create a balanced soundfield. At Audio Planet, we elevate good to best by paying attention to the invisible elements: power conditioning, vibration isolation, and meticulous equalization. It's the synthesis of these micro-adjustments that transforms a room into a dedicated cinematic sanctuary.",
+      "readTime": "5 min read",
+      "image": "/images/blog-acoustics.jpg"
+    },
+    {
+      "slug": "beyond-aesthetics-science-of-acoustics",
+      "title": "Beyond Aesthetics is the Science of Acoustics",
+      "date": "February 06, 2014",
+      "author": "Muralidharan S.",
+      "category": "Acoustics",
+      "summary": "Interior design makes a room look beautiful, but acoustic science makes it sound beautiful. How we bridge the gap.",
+      "content": "Architects and interior designers excel at creating visually stunning spaces. However, hard surfaces like glass, marble, and concrete—often favored in modern design—are acoustic nightmares. They cause severe reflections that smear the sound and destroy intelligibility. The challenge is to implement acoustic treatments without ruining the aesthetic vision. This is where the science of acoustics meets the art of design. We use micro-perforated wood panels, acoustically transparent fabrics, and hidden bass traps to control sound while remaining visually unobtrusive. True luxury is an environment that pleases both the eye and the ear. By collaborating with designers from the blueprint stage, we ensure that the science of acoustics enhances, rather than compromises, the aesthetics.",
+      "readTime": "6 min read",
+      "image": "/images/blog-vinyl.jpg"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Mr. Palani and his team do a wonderful job. The intelligibility of speech and depth of musical playback is standard-setting.",
+      "author": "Ajoy",
+      "designation": "COO",
+      "company": "PES Institutions, Bangalore"
+    },
+    {
+      "quote": "Mr. Palani of Audio Planet convinced me that the room is the most important component. Their acoustic engineering is flawless.",
+      "author": "K. N. Arun Kumar",
+      "designation": "Acoustic Engineer",
+      "company": "Bangalore"
+    },
+    {
+      "quote": "I would highly recommend Mr. Palani for any audio/video needs. Palani's team helped disassemble/re-assemble my system each time I moved (4 times!).",
+      "author": "Girish Venkatachaliah",
+      "designation": "Director",
+      "company": "IBM, Bangalore"
+    },
+    {
+      "quote": "Audio Planet provides precision-oriented solutions. Their understanding of sound dynamics is unmatched in the industry.",
+      "author": "Balaji Sundar",
+      "designation": "AV and Home Theater Professional",
+      "company": "Chennai"
+    },
+    {
+      "quote": "The dedication to achieving the perfect sound is evident in every detail of their work. Truly a bespoke experience.",
+      "author": "Sundeep PS",
+      "designation": "MD",
+      "company": "Amarjyothi Nursing Home, Bangalore"
+    },
+    {
+      "quote": "Their technical knowledge and execution are top-notch. They transformed my living space into a concert hall.",
+      "author": "Kamalakannan",
+      "designation": "IT Professional",
+      "company": "Bangalore"
+    },
+    {
+      "quote": "An absolute pleasure working with Audio Planet. They understand the nuances of high-end audio perfectly.",
+      "author": "Sumalatha Ambareesh",
+      "designation": "Cine Artist & Celebrity",
+      "company": "Bangalore"
+    },
+    {
+      "quote": "The calibration process was fascinating to watch. The final result exceeded all my expectations.",
+      "author": "Vikram Nadgir",
+      "designation": "Engineer",
+      "company": "Bangalore"
+    },
+    {
+      "quote": "They don't just sell equipment; they deliver an auditory experience tailored to your exact preferences.",
+      "author": "Rajesh Acharya",
+      "designation": "Senior Software Engineer",
+      "company": "Bangalore"
+    },
+    {
+      "quote": "As a design engineer, I appreciate their meticulous approach to acoustic treatment integration.",
+      "author": "Arun Prasad",
+      "designation": "Design Engineer",
+      "company": "Bangalore"
+    },
+    {
+      "quote": "Audio Planet has been my go-to for all Hi-Fi needs. Their post-installation support is exceptional.",
+      "author": "Joel D'Souza",
+      "designation": "Entrepreneur",
+      "company": "Bangalore"
+    },
+    {
+      "quote": "The clarity and detail I now hear in my favorite tracks are astounding. Highly recommended.",
+      "author": "Rohan Sharma",
+      "designation": "Quality Analyst",
+      "company": "Bangalore"
+    },
+    {
+      "quote": "Even from afar, their consultation and guidance in setting up my home theatre was invaluable.",
+      "author": "Santosh",
+      "designation": "Col",
+      "company": "Assam"
+    },
+    {
+      "quote": "Professional, knowledgeable, and passionate about sound. A truly premium consultancy service.",
+      "author": "Sanjeev Ghai",
+      "designation": "VP Consulting",
+      "company": "MNC"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is the difference between an audio retailer and an audio consultancy?",
+      "answer": "An audio retailer sells boxes. They are motivated by inventory. As a consultancy, Audio Planet works backward from your space, budget, and listening preferences. We measure your room's acoustic properties, consult on layout, select brands that complement each other, and calibrate the final system to perform optimally. We are consultants first, dealers second."
+    },
+    {
+      "question": "Do I need to hire an acoustic designer if I am already working with an interior designer?",
+      "answer": "Yes. While interior designers focus on visual aesthetics and layouts, acoustic design is a specialized engineering discipline. Sound waves behave in complex, non-visual ways. We collaborate closely with your architects and interior designers from the blueprint stage to integrate acoustic treatments (like fabric panels, acoustic plaster, and bass traps) invisibly into their visual design."
+    },
+    {
+      "question": "Can you upgrade or calibrate an existing audio system that I bought elsewhere?",
+      "answer": "Absolutely. Frequently, the biggest bottleneck in an existing system is not the hardware, but room placement, cabling, power conditioning, and acoustics. We offer room-evaluation and system-optimization audits to extract the absolute best performance from your current investments."
+    }
+  ],
+  "geoPages": [
+    {
+      "location": "bangalore-indiranagar",
+      "title": "Bespoke Home Theater & Hi-Fi Consulting in Indiranagar, Bangalore",
+      "headline": "Sound Engineered for Indiranagar's Finest Residences",
+      "intro": "Audio Planet provides professional room acoustic analysis, custom home theater setups, and elite Hi-Fi system integration for homeowners, architects, and designers in Indiranagar.",
+      "paragraph": "Indiranagar is known for its elegant residential design and vibrant lifestyles. We bring museum-grade listening room consulting right to your doorstep. From isolating traffic noise from the 100 Feet Road to configuring multi-room audio systems that blend into mid-century modern architectures, our consultants deliver acoustic excellence tailored to Indiranagar homes.",
+      "keywords": ["Home Theater Indiranagar", "Hi-Fi Audio Consulting Bangalore", "Acoustic Designers Indiranagar", "Luxury Audio Showroom Indiranagar"]
+    },
+    {
+      "location": "bangalore-whitefield",
+      "title": "Premium Home Cinema & Acoustic Design in Whitefield, Bangalore",
+      "headline": "Acoustic Excellence for Whitefield's Modern Villas & Penthouses",
+      "intro": "Serving the tech corridors and luxury enclaves of Whitefield, Audio Planet specializes in custom home cinemas, boardroom AV systems, and smart home acoustics.",
+      "paragraph": "Whitefield's sprawling villas and expansive penthouses demand sound systems that match their scale. We consult on dedicated home theater rooms, high-ceiling acoustics, and noise isolation, ensuring your audio system sounds pristine even in open-concept architectures. Our engineers have successfully integrated audio solutions in prestigious residential developments across Whitefield.",
+      "keywords": ["Home Cinema Whitefield", "Luxury Sound Systems Whitefield", "Boardroom AV Systems Whitefield", "Acoustic Treatment Whitefield"]
+    }
+  ]
+}
