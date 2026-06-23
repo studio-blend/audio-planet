@@ -97,7 +97,12 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <div className="container bottom-container">
-          <span className="copyright">© {currentYear} AUDIO PLANET. ALL RIGHTS RESERVED.</span>
+          <span className="copyright">
+            © {currentYear} AUDIO PLANET. ALL RIGHTS RESERVED.
+            <span className="credit-separator"> | </span>
+            <span className="mobile-break"></span>
+            Designed by <a href="https://klyph.in" target="_blank" rel="noreferrer" className="credit-link" onMouseEnter={addHover} onMouseLeave={removeHover}>Klyph Studios</a>
+          </span>
           <div className="legal-links">
             <Link href="/faqs" onMouseEnter={addHover} onMouseLeave={removeHover}>Disclaimer</Link>
             <Link href="/contact" onMouseEnter={addHover} onMouseLeave={removeHover}>Enquire</Link>
@@ -237,6 +242,21 @@ export default function Footer() {
 
         .copyright {
           color: #555;
+          line-height: 1.6;
+        }
+
+        .credit-link {
+          color: #777;
+          text-decoration: none;
+          transition: var(--transition-fast);
+        }
+
+        .credit-link:hover {
+          color: var(--accent-gold);
+        }
+
+        .mobile-break {
+          display: none;
         }
 
         .legal-links {
@@ -269,6 +289,13 @@ export default function Footer() {
             flex-direction: column;
             gap: 1rem;
             align-items: flex-start;
+          }
+          .credit-separator {
+            display: none;
+          }
+          .mobile-break {
+            display: block;
+            margin-top: 0.25rem;
           }
         }
       `}</style>
