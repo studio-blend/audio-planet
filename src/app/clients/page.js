@@ -18,36 +18,9 @@ export default function Clients() {
 
   const clients = [
     { name: 'PES Institutions', type: 'Educational / Auditorium' },
-    { name: 'DecoForm Associates', type: 'Residential Architecture' },
-    { name: 'Jayanagar Villas', type: 'Private Residential' },
-    { name: 'Ozone Group penthouses', type: 'Smart Home Acoustics' },
-    { name: 'Taj Hotels Bangalore', type: 'Boardroom Integrations' },
-    { name: 'Salarpuria Sattva estates', type: 'Bespoke Home Cinemas' }
-  ];
-
-  const caseStudies = [
-    {
-      title: "PES Institutions Auditorium Calibration",
-      category: "INSTITUTIONAL ACOUSTICS",
-      summary: "Calibrating a 1,200-seat multi-purpose university auditorium. Standardized speech intelligibility indexes (STI) across all listening zones without structural modification.",
-      challenge: "High ceiling boundaries and curved concrete back walls created severe flutter echo and speech muddying.",
-      solution: "Engineered high-density corner bass trapping, custom fabric side absorption panels, and calibrated speaker array delay stages using acoustic impulse software.",
-      testimonial: {
-        quote: "Their work at our institutional auditorium was impeccable. The intelligibility of speech and depth of musical playback is standard-setting.",
-        author: "Prof. K. Venkatesh, Infrastructure Director, PES Institutions"
-      }
-    },
-    {
-      title: "Indiranagar Penthouse Acoustic Treatment",
-      category: "RESIDENTIAL CINEMA",
-      summary: "A private high-fidelity reference listening room for a classical music patron, built in an open-concept 4,000 sq ft penthouse floor.",
-      challenge: "Double-height glass windows and marble floors created extreme high-frequency resonance and a decay time of over 2.4 seconds.",
-      solution: "Fitted custom micro-perforated wood ceiling panels, thick wool carpets with acoustic rubber underlays, and motor-driven double-layer acoustic draperies.",
-      testimonial: {
-        quote: "Audio Planet doesn't just install speakers; they design an atmosphere. Their understanding of room acoustics changed how we conceptualize luxury living spaces.",
-        author: "Ravi Shankar, Principal Architect, DecoForm Associates"
-      }
-    }
+    { name: 'IBM Bangalore', type: 'Corporate Integration' },
+    { name: 'Amarjyothi Nursing Home', type: 'Institutional' },
+    { name: 'Gayathri and Namith Associates', type: 'Architecture Partners' }
   ];
 
   const addHover = () => {
@@ -84,41 +57,6 @@ export default function Clients() {
             >
               <h3 className="client-logo-txt font-headline-serif">{client.name}</h3>
               <span className="client-logo-sub font-mono-tag">{client.type}</span>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Case Studies */}
-      <section className="case-studies-section">
-        <h2 className="font-headline-serif section-main-title">Acoustic Case Studies</h2>
-        
-        <div className="case-studies-list">
-          {caseStudies.map((cs, i) => (
-            <div key={i} className="case-study-card exhibition-frame">
-              <div className="cs-header">
-                <span className="font-mono-tag cs-tag">{cs.category}</span>
-                <h3 className="font-headline-serif cs-title">{cs.title}</h3>
-              </div>
-              
-              <p className="cs-summary">{cs.summary}</p>
-              
-              <div className="cs-details-grid">
-                <div className="cs-detail-block">
-                  <h4 className="font-mono-tag block-title">Acoustic Challenge</h4>
-                  <p>{cs.challenge}</p>
-                </div>
-                <div className="cs-detail-block">
-                  <h4 className="font-mono-tag block-title">Acoustic Solution</h4>
-                  <p>{cs.solution}</p>
-                </div>
-              </div>
-
-              <div className="cs-quote-block">
-                <Quote className="quote-icon" size={24} />
-                <p className="quote-text font-display-italic">"{cs.testimonial.quote}"</p>
-                <span className="quote-author font-mono-tag">— {cs.testimonial.author}</span>
-              </div>
             </div>
           ))}
         </div>
@@ -211,97 +149,11 @@ export default function Clients() {
           margin-top: 0.5rem;
         }
 
-        /* Case Studies */
-        .case-studies-section {
-          margin-bottom: 4rem;
-        }
-
+        /* Full Testimonials */
         .section-main-title {
           font-size: 2.5rem;
           margin-bottom: 3rem;
         }
-
-        .case-studies-list {
-          display: flex;
-          flex-direction: column;
-          gap: 3.5rem;
-        }
-
-        .case-study-card {
-          padding: 4rem;
-          background-color: var(--bg-surface);
-        }
-
-        .cs-header {
-          border-bottom: 1px solid var(--border-color);
-          padding-bottom: 1.5rem;
-          margin-bottom: 2rem;
-        }
-
-        .cs-tag {
-          color: var(--accent-gold);
-          font-size: 0.65rem;
-        }
-
-        .cs-title {
-          font-size: 2rem;
-          margin-top: 0.25rem;
-        }
-
-        .cs-summary {
-          font-size: 1.1rem;
-          line-height: 1.6;
-          color: var(--text-primary);
-          margin-bottom: 2.5rem;
-          max-width: 900px;
-        }
-
-        .cs-details-grid {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 3rem;
-          margin-bottom: 3rem;
-        }
-
-        .block-title {
-          color: var(--text-primary);
-          font-size: 0.7rem;
-          margin-bottom: 0.75rem;
-        }
-
-        .cs-detail-block p {
-          color: var(--text-secondary);
-          font-size: 0.95rem;
-          line-height: 1.6;
-        }
-
-        .cs-quote-block {
-          border-top: 1px dashed var(--border-color);
-          padding-top: 2rem;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-        }
-
-        .quote-icon {
-          color: var(--accent-gold);
-          margin-bottom: 1rem;
-          opacity: 0.6;
-        }
-
-        .quote-text {
-          font-size: 1.25rem;
-          color: var(--text-primary);
-          line-height: 1.5;
-          margin-bottom: 1rem;
-        }
-
-        .quote-author {
-          font-size: 0.65rem;
-          color: var(--text-secondary);
-        }
-
-        /* Full Testimonials */
         .full-testimonials-section {
           margin-top: 6rem;
         }
@@ -355,24 +207,11 @@ export default function Clients() {
           .logos-grid {
             grid-template-columns: 1fr 1fr;
           }
-          .case-study-card {
-            padding: 2rem;
-          }
-          .cs-details-grid {
-            grid-template-columns: 1fr;
-            gap: 1.5rem;
-          }
         }
 
         @media (max-width: 600px) {
           .logos-grid {
             grid-template-columns: 1fr;
-          }
-          .cs-title {
-            font-size: 1.5rem;
-          }
-          .cs-summary {
-            font-size: 0.95rem;
           }
         }
       `}</style>

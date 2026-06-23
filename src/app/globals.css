@@ -7,9 +7,9 @@
   --accent-gold: #C9A84C;
   --accent-glow: #E8C97A;
   --text-primary: #F0EDE6;
-  --text-secondary: #8A8680;
+  --text-secondary: #A3A09A;
   --border-color: #2A2520;
-  --gold-glow-rgba: rgba(201, 168, 76, 0.15);
+  --gold-glow-rgba: rgba(201, 168, 76, 0.35);
   
   /* Fonts */
   --font-display: var(--font-cormorant), serif;

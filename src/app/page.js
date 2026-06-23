@@ -30,15 +30,15 @@ export default function Home() {
 
   const testimonials = dbData?.testimonials || [
     {
-      quote: "Audio Planet doesn't just install speakers; they design an atmosphere. Their understanding of room acoustics changed how we conceptualize luxury living spaces.",
-      author: "Ravi Shankar",
-      designation: "Principal Architect",
-      company: "DecoForm Associates"
+      quote: "High end audio/video and the concept of a budget is a myth. Mr. Palani and his team do a wonderful job of doing a balancing act between these parameters and are able to give a practical value for money.",
+      author: "Ajoy",
+      designation: "COO",
+      company: "PES Institutions, Bangalore"
     },
     {
-      quote: "The consultation process was eye-opening. They spent hours measuring my room's reflections and understanding my musical tastes before suggesting a single piece of hardware.",
-      author: "Dr. Anirudh Rao",
-      designation: "Cardiologist & Audiophile",
+      quote: "The finer points which make a huge impact on a home theatre system or a stereo music setup brought out very lucidly by Mr. Palani of Audio Planet convinced me of his really true 'audiophile' intention.",
+      author: "K. N. Arun Kumar",
+      designation: "Acoustic Engineer",
       company: "Bangalore"
     }
   ];
@@ -137,7 +137,7 @@ export default function Home() {
           <div className="gold-hairline" />
           <div className="positioning-content">
             <h2 className="statement-text font-display-italic">
-              "We do not sell boxes. We design acoustic systems. We engineer the exact movement of air in your private sanctuary."
+              "Most buyers want the best, but few are introduced to the physics of sound replication. We demystify the acoustic environment, balancing budget with true high-end value to engineer the perfect listening sanctuary."
             </h2>
             
             <div className="stats-grid font-mono-tag">
@@ -217,7 +217,7 @@ export default function Home() {
               <Settings className="card-icon" size={32} />
               <h3 className="card-title font-headline-serif">Premium Systems</h3>
               <p className="card-desc">
-                Elite reference amplifiers, handcrafted Italian loudspeakers, audiophile turntables, and source equipment curated.
+                Elite reference amplifiers, handcrafted Italian loudspeakers, the acclaimed Aktimate Micro, audiophile turntables, and curated source equipment.
               </p>
               <Link href="/products" className="card-link" onMouseEnter={addHover} onMouseLeave={removeHover}>
                 Explore Curation <ArrowRight size={16} />
@@ -236,15 +236,15 @@ export default function Home() {
           <div className="difference-content">
             <div className="content-padding">
               <span className="font-mono-tag">The Showroom</span>
-              <h2 className="font-headline-serif section-title">Experience Centre</h2>
+              <h2 className="font-headline-serif section-title">Experience Centre & Expertise</h2>
               <p className="difference-para">
-                Located in Indiranagar, Bangalore, our private showroom features three acoustically isolated reference listening chambers. Here, you can experience the differences between analogue warmth and pristine digital conversion, or test speaker dispersion patterns in real time.
+                Led by our founder Mr. Palani, we don't just showcase equipment—we educate. Located in Indiranagar, Bangalore, our private showroom features three acoustically isolated reference chambers where you can hear the difference between analogue warmth and pristine digital conversion in real time.
               </p>
               <p className="difference-para">
-                We host private, single-client sessions by appointment, providing an uninterrupted space to audition high-end hardware.
+                We host private, single-client sessions by appointment, ensuring you understand the physics of your listening room before making an investment.
               </p>
               <Link href="/about" className="btn-secondary" onMouseEnter={addHover} onMouseLeave={removeHover}>
-                Our Story & Philosophy →
+                Meet Mr. Palani & Our Team →
               </Link>
             </div>
           </div>
