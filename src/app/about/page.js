@@ -77,20 +77,18 @@ export default function About() {
 
       <section className="about-team">
         <h2 className="font-headline-serif section-title text-center">Consultancy Board</h2>
-        <div className="team-grid">
+        <div className="team-grid single-member">
           <div className="team-member exhibition-frame">
-            <h3 className="member-name font-headline-serif">Palani Kumar</h3>
-            <span className="member-title font-mono-tag">Founder & Lead Acoustician</span>
-            <p className="member-bio">
-              With over 25 years dedicated to acoustic engineering, Mr. Palani has personally overseen the acoustic layout of hundreds of private cinema rooms and institutional auditoriums. Known for his hands-on approach and dedication, he works directly with clients from blueprint analysis to final calibration.
-            </p>
-          </div>
-          <div className="team-member exhibition-frame">
-            <h3 className="member-name font-headline-serif">Muralidharan S.</h3>
-            <span className="member-title font-mono-tag">Principal Audio Consultant</span>
-            <p className="member-bio">
-              An expert in matching solid-state and valve amplifiers with loudspeaker impedance loads. Muralidharan assists clients in tailoring component chains to their listening tastes.
-            </p>
+            <div className="member-image-wrapper">
+              <div className="member-image" style={{ backgroundImage: `url('/images/founder.jpg')` }} />
+            </div>
+            <div className="member-info">
+              <h3 className="member-name font-headline-serif">Palani Kumar</h3>
+              <span className="member-title font-mono-tag">Founder & Lead Acoustician</span>
+              <p className="member-bio">
+                With over 25 years dedicated to acoustic engineering, Mr. Palani has personally overseen the acoustic layout of hundreds of private cinema rooms and institutional auditoriums. Known for his hands-on approach and dedication, he works directly with clients from blueprint analysis to final calibration.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -215,30 +213,55 @@ export default function About() {
           margin-bottom: 6rem;
         }
 
-        .team-grid {
+        .team-grid.single-member {
           display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 3rem;
+          grid-template-columns: 1fr;
+          max-width: 900px;
+          margin: 0 auto;
         }
 
         .team-member {
+          display: flex;
+          gap: 4rem;
+          align-items: center;
           padding: 3rem;
         }
 
+        .member-image-wrapper {
+          flex-shrink: 0;
+          width: 250px;
+          height: 300px;
+          border: 1px solid var(--border-color);
+        }
+
+        .member-image {
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          background-position: center;
+          filter: grayscale(100%);
+        }
+
+        .member-info {
+          display: flex;
+          flex-direction: column;
+        }
+
         .member-name {
-          font-size: 1.8rem;
-          margin-bottom: 0.25rem;
+          font-size: 2.2rem;
+          margin-bottom: 0.5rem;
         }
 
         .member-title {
           margin-bottom: 1.5rem;
           display: block;
+          color: var(--accent-gold);
         }
 
         .member-bio {
           color: var(--text-secondary);
-          font-size: 0.95rem;
-          line-height: 1.6;
+          font-size: 1.05rem;
+          line-height: 1.7;
         }
 
         /* CTA footer */
@@ -283,11 +306,18 @@ export default function About() {
           .editorial-quote {
             font-size: 1.4rem;
           }
-          .team-grid {
+          .team-grid.single-member {
             grid-template-columns: 1fr;
           }
           .team-member {
-            padding: 1.5rem;
+            flex-direction: column;
+            padding: 2rem;
+            gap: 2rem;
+            text-align: center;
+          }
+          .member-image-wrapper {
+            width: 100%;
+            height: 300px;
           }
         }
       `}</style>
