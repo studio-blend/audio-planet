@@ -10,17 +10,17 @@
   --text-secondary: #A3A09A;
   --border-color: #2A2520;
   --gold-glow-rgba: rgba(201, 168, 76, 0.35);
-  
+
   /* Fonts */
   --font-display: var(--font-cormorant), serif;
   --font-headline: var(--font-libre), serif;
   --font-body: var(--font-dm-sans), sans-serif;
   --font-mono: var(--font-space-mono), monospace;
-  
+
   /* Spacing */
   --section-padding: 6rem 2rem;
   --container-max-width: 1200px;
-  
+
   /* Transition */
   --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-fast: all 0.2s ease;
@@ -40,6 +40,7 @@ html {
   font-family: var(--font-body);
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
+  filter: brightness(1.5);
 }
 
 body {
@@ -52,13 +53,16 @@ body {
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--bg-primary);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--border-color);
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-gold);
 }
@@ -86,7 +90,8 @@ body {
 
 /* Layout Containers */
 .content-container {
-  min-height: calc(100vh - 80px); /* header height offset */
+  min-height: calc(100vh - 80px);
+  /* header height offset */
 }
 
 .container {
@@ -96,7 +101,12 @@ body {
 }
 
 /* Typography System */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--text-primary);
   font-weight: 400;
   letter-spacing: -0.02em;
@@ -217,7 +227,9 @@ button {
   letter-spacing: 0.05em;
 }
 
-.form-input, .form-textarea, .form-select {
+.form-input,
+.form-textarea,
+.form-select {
   width: 100%;
   padding: 0.85rem 1rem;
   background-color: #080808;
@@ -229,15 +241,22 @@ button {
   outline: none;
 }
 
-.form-input:focus, .form-textarea:focus, .form-select:focus {
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
   border-color: var(--accent-gold);
   box-shadow: 0 0 8px rgba(201, 168, 76, 0.1);
 }
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeUp {
@@ -245,6 +264,7 @@ button {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -252,8 +272,15 @@ button {
 }
 
 @keyframes pulseWaveform {
-  0%, 100% { transform: scaleY(1); }
-  50% { transform: scaleY(0.4); }
+
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(0.4);
+  }
 }
 
 .anim-fade-in {
@@ -300,8 +327,9 @@ button {
   html {
     font-size: 14px;
   }
-  
-  .custom-cursor, .custom-cursor-dot {
+
+  .custom-cursor,
+  .custom-cursor-dot {
     display: none !important;
   }
 }
@@ -568,6 +596,7 @@ button {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
+
   .geo-sidebar {
     position: relative;
     top: unset;
@@ -578,12 +607,15 @@ button {
   .geo-title {
     font-size: 2.5rem;
   }
+
   .content-card {
     padding: 1.5rem;
   }
+
   .article-title {
     font-size: 2.2rem;
   }
+
   .article-p {
     font-size: 1rem;
   }
@@ -598,6 +630,7 @@ button {
   from {
     transform: scale(1.02);
   }
+
   to {
     transform: scale(1.08);
   }
@@ -622,6 +655,7 @@ button {
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0.7;
   }
+
   100% {
     transform: translate(-50%, -50%) scale(1.1);
     opacity: 1;
@@ -629,28 +663,44 @@ button {
 }
 
 /* Staggered entrance animations */
-.fade-up-1, .fade-up-2, .fade-up-3, .fade-up-4 {
+.fade-up-1,
+.fade-up-2,
+.fade-up-3,
+.fade-up-4 {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-.fade-up-1 { animation-delay: 0.1s; }
-.fade-up-2 { animation-delay: 0.2s; }
-.fade-up-3 { animation-delay: 0.3s; }
-.fade-up-4 { animation-delay: 0.4s; }
+.fade-up-1 {
+  animation-delay: 0.1s;
+}
+
+.fade-up-2 {
+  animation-delay: 0.2s;
+}
+
+.fade-up-3 {
+  animation-delay: 0.3s;
+}
+
+.fade-up-4 {
+  animation-delay: 0.4s;
+}
 
 /* Global Grid Responsiveness Overrides for mobile friendliness */
 @media (max-width: 1024px) {
   .cards-grid {
     grid-template-columns: repeat(2, 1fr) !important;
   }
+
   .products-grid {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 }
 
 @media (max-width: 768px) {
+
   /* Layout Paddings */
   :root {
     --section-padding: 4rem 1.5rem;
@@ -677,14 +727,15 @@ button {
     grid-template-columns: 1fr !important;
     min-height: auto !important;
   }
-  
+
   .difference-image {
     height: 250px !important;
   }
 
   .award-image {
     height: 200px !important;
-    grid-row: 1; /* Place image above text in flex layout on mobile */
+    grid-row: 1;
+    /* Place image above text in flex layout on mobile */
   }
 
   .award-content {
